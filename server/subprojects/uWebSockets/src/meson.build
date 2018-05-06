@@ -1,0 +1,13 @@
+lib = static_library('uWS',
+                     'Extensions.cpp',
+                     'Group.cpp',
+                     'Networking.cpp',
+                     'Hub.cpp',
+                     'Node.cpp',
+                     'WebSocket.cpp',
+                     'HTTPSocket.cpp',
+                     'Socket.cpp',
+                     'Epoll.cpp',
+                     include_directories : inc_uWS,
+                     dependencies : [ openssl_dep, zlib_dep ],
+                     install : true)
